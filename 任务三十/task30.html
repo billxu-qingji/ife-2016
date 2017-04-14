@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style>
+        	form{padding: 30px; position: relative; border: groove 5px; display: inline-block; }
+        	label{display: block; margin:30px 0;}
+        	label input{width:300px;}
+        	label p {position: absolute; margin: 0; color: #ccc; left:8
+        		0px; display: none;}
+        	#checkLab{margin-left: -2em;}
+        	button{position: absolute; right: 10px; background: #1561C9; border: none; height: 20px; width: 50px; color: white; font-weight: bold;}
+        </style>
+    </head>
+    <body>
+    	<form action="" id="form">
+    		<label for="">名称：
+    			<input type="text" id="username">
+				<p id="dis-username">请填写相关名称</p>
+    		</label>
+
+    		<label for="">密码：
+    			<input type="password" id="password">
+    			<p id="dis-password">请填写相关名称</p>
+    		</label>
+
+    		<label for="" id="checkLab">密码确认：
+    			<input type="password" id="check">
+    			<p id="dis-check">请填写相关名称</p>
+    		</label>
+
+    		<label for="">邮箱：
+    			<input type="text" id="email">
+    			<p id="dis-email">请填写相关名称</p>
+    		</label>
+
+    		<label for="">手机：
+    			<input type="text" id="phone">
+    			<p id="dis-phone">请填写相关名称</p>
+    		</label>
+
+    		<button id="submit">提交</button>
+    	</form>
+    	<script src="task30_0.js"></script>
+    </body>
+</html>

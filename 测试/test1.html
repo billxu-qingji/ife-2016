@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+    </head>
+    <body>
+    	<button id="btn">点击</button>
+    	<button id="cancle">取消</button>
+    </body>
+    <script>
+    	var btn = document.getElementById("btn");
+    	var cancleBtn = document.getElementById("cancle");
+    	btn.addEventListener("click", clickHandler, false);
+    	function　clickHandler(){
+    		console.log("haha");
+    	}
+    	cancleBtn.addEventListener("click", function(){
+    		btn.removeEventListener("click", clickHandler, false);
+    	}, false)
+    </script>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style>
+        	#display span{height: 50px;  font-size: 12px; font-weight: bold; text-align: center; color: red; display: inline-block; line-height: 50px; margin: 20px; border:solid 1px blue;}
+            .selected{background: #ccc};
+        </style>
+    </head>
+    <body>
+    <div>
+    	<label for="">请输入内容></label>
+        <textarea name="" id="input-value" cols="30" rows="10"></textarea>
+        <br><br>
+        <label for="">请输入查询内容<input type="text" id="query-value"></label>
+        <br><br>
+    	<div id="btn">
+    		<button id="left-in-btn">左侧入</button>
+    		<button id="right-in-btn">右侧入</button>
+    		<button id="left-out-btn">左侧出</button>
+    		<button id="right-out-btn">右侧出</button>
+            <button id="query">查询</button>
+    	</div><br>
+    </div>
+    <div id="display">
+    	<span class="selected">1</span>
+    </div>
+
+    </body>
+    <!-- <script src="task18_0.js"></script> -->
+    <script src="task20_0.js"></script>
+</html>

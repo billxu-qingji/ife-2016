@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+		<style>
+			div{border:2px solid blue; font-size:24px; color:red; padding: 10px; display: inline-block;}
+			.child-3{height: 30px; width:30px;}
+		</style>
+    </head>
+    <body>
+		<div id="root">
+			1
+			<div class="child-1">2
+				<div class="child-2">4
+					<div class="child-3">10</div>
+				</div>
+				<div class="child-2">5</div>
+			</div>
+			<div class="child-1">3
+				<div class="child-2">6</div>
+				<div class="child-2">7
+					<div class="child-3">11</div>
+				</div>
+			</div>
+			<div class="child-1">4
+				<div class="child-2">8</div>
+				<div class="child-2">9</div>
+			</div>
+		</div><br><br>
+
+		<div>
+			<button id="tra">开始遍历</button><br>
+			<input type="text">
+			<button>查询</button>
+		</div>
+	    <script src="task23_0.js"></script>
+    </body>
+</html>

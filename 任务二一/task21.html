@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style>
+        body{font-size: 24px; font-weight: bold; font-family:"楷体";}
+        #tag-display{height: 100px; width:500px; border:solid 3px blue;margin:20px;}
+        #tag-display span{ background: blue; color:white; margin:10px; display: inline-block;}
+        #interest-display{height: 200px; width:500px; border:solid 3px red; margin:20px;}
+        #interest-display span{ background: red; color: white; margin:10px; display: inline-block;}
+        .selected{background: red !important;}
+        </style>
+    </head>
+    <body>
+    	<div>
+    		<label for="">Tag:<input type="text" id="tag-input"></label>
+    		<div id="tag-display">
+    			<span class=".selected">html5</span>
+    			<span>css</span>
+    		</div>
+    	</div>
+    	<div>
+    		<textarea name="" id="interest-input" cols="30" rows="10"></textarea>
+    		<button id="interest-btn">确认兴趣爱好</button>
+    		<div id="interest-display">
+    			<span>游泳</span>
+    		</div>
+    	</div>
+    	<script src="task21_2.js"></script>
+    </body>
+</html>

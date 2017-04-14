@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="task38.css">
+    </head>
+    <body>
+    	<button id="btn">点击生成表格</button>
+    	<div id="container">
+    		
+    	</div>
+    </body>
+    <script src="task38.js"></script>
+    <script>
+    	document.querySelector("#btn").onclick = function(){
+	    	var table = new Table({
+	    		
+	    		// 数据
+	    		data: {
+	    			head: ["姓名", "语文", "数学", "英语", "总分"],
+	    			body: [["小红", 80, 90, 70, 240], ["小明",90, 60, 90, 240],["小亮", 60, 100, 70, 230]]
+	    		},
+
+	    		// 表格的目标容器
+	    		target: "#container",
+
+	    		// 支持排序的列
+	    		sortItem: ["姓名", "总分", "数学", "语文"],
+	    	})
+            table.sortFunc = function(x, y){
+                return x-y;
+            }  
+     	}
+    </script>
+</html>

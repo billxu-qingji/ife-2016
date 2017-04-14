@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style>
+        	*{margin:0; padding: 0;}
+        	table{border-right:1px solid; border-bottom: 1px solid; position: relative;}
+			table td{border-left:1px solid; border-top: 1px solid; height: 40px; width: 40px; text-align: center; box-sizing:border-box;}
+        	#red-span{height: 10px; width:40px; background: red;}
+			#blue-span{height: 30px; width:40px; background: blue;}
+			#box{position: absolute; top:160px; left: 160px; height: 40px; width: 40px; -webkit-transition: 1s;}
+			/* 命令区开始 */
+			#dis{position: relative;}
+			#list{width: 20px; height: 200px; position: absolute; overflow: hidden;}
+			#ol-list{width: 20px; background: #ccc; position: absolute; }
+			#ol-list li{height: 20px; line-height: 20px; text-align: center; border-radius: 50%; list-style:none;}
+			#ipt{background: black; color:#4DF617; line-height: 20px; width: 400px; height: 200px; resize:none; position: absolute; left: 20px;}
+        </style>
+    </head>
+    <body>
+    	<!-- 表格内容区 -->
+    	<div id="container">
+    		<div id="box">
+    			<div id="red-span"></div>
+    			<div id="blue-span"></div>
+    		</div>
+    	</div>
+    	<!-- 命令区 -->
+    	<div>
+    		<button id="exeBtn">执行</button>
+    		<button id="refreshBtn">Refresh</button><br><br>
+			<div id="display">
+				<div id="list">
+					<ol id="ol-list">
+						
+					</ol>
+				</div>
+	    		<textarea name="" id="ipt"></textarea>
+			</div>
+    	</div>
+    </body>
+   <!--  <script>
+    	var textarea = document.getElementById("ipt");
+    	var exeBtn = document.getElementById("exeBtn");
+    	var olList = document.getElementById("ol-list");
+    	textarea.onkeydown = function(event){
+    		console.log(event.keyCode);
+    	}
+    	exeBtn.onclick = function(){
+    		var values = textarea.value.split(/\n/);
+    		console.log(values);
+    	}
+    	textarea.onscroll = function(){
+    		olList.style.top = -this.scrollTop + "px";
+    		console.log(this.scrollTop)
+    	}
+    </script> -->
+    <script src="task35_0_1.js"></script>
+</html>
